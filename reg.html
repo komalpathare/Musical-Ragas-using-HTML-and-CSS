@@ -1,0 +1,168 @@
+<html>
+<head>
+<style>
+.img{
+	display:block;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:-1;
+}
+#heading{
+	font-family:gabriola;
+	font-size:325.5%;
+	color:#ffbf00;
+	margin-left:7%;
+}
+.container{
+	height:100%;
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+#wrap{
+	width:100%;
+	height:8%;
+	margin:0px;
+	padding:0px;
+	position:relative;
+}
+.navbar{
+	height:30%;
+	width:100%;
+	margin:0;
+	padding:0;
+	position:absolute;
+	
+}
+.navbar li{
+	height:auto;
+	width:266.6px;
+	float:left;
+	list-style:none;
+	text-align:center;
+	margin:0px;
+	padding:0px;
+	background-color:#ffb366;
+}
+.navbar a{
+	padding:18px 0;
+	border-left:1px solid;
+	border-right:1px solid;
+	display:block;
+	color:#e63900;
+	text-decoration:none;
+}
+.navbar li ul{
+	display:none;
+	height:auto;
+	margin:0;
+	padding:0;
+}
+.navbar li:hover ul{
+	display:block;
+}
+.navbar li ul li{
+	background-color:yellow;
+}
+.navbar li ul li a{
+	border:1px solid;
+	color:blue;
+}
+.navbar li ul a:hover{
+	background-color:rgba(0,0,0,0.2);
+}
+#a{
+	margin-top:0.5%;
+}
+.reg{
+	margin:0 auto;
+}
+input[type=text] {
+    width:90%;
+    padding:10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+}
+#passwd{
+
+    width:90%;
+    padding:10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+}
+
+
+</style>
+</head>
+<body bgcolor="#ffe699">
+
+<div class="container">
+<div>
+<h1 id="heading">MUSICAL RAGAS</h1>
+<img src="images (15).jpg" height="20%" width="100%" class="img">
+</div>
+<div id="wrap">
+<ul class="navbar">
+<li><a href="home page.html">HOME</a></li>
+<li><a href="principal ragas.html">PRINCIPAL RAGAS</a>
+</li>
+<li><a href="ragamala paintings.html">RAGAMALA PAINTINGS</a></li>
+<li><a href="#">RAGA-RAGINI SYSTEM</a></li>
+<li><a href="#">CONTACT US</a></li>
+</ul>
+</div>
+<div class="reg">
+<h2 id="a">REGISTRATION FORM</h1><br/>
+<form name="regform" onsubmit="validate()">
+First Name:
+<input type="text" name="fname"><br/>
+Last Name:
+<input type="text" id="lname" name="lastname"><br/>
+Date of Birth:
+<input type="date" id="passwd" name="date of birth"><br/>
+Email-Id:
+<input type="email" id="passwd" name="mailid"><br/>
+Mobile Number:
+<input type="text" id="no." name="m no."><br/>
+Gender:
+Male<input type="radio" id="gender" name="gen">
+Female<input type="radio" id="gender" name="gen"><br/>
+Address:
+<textarea id="passwd"></textarea><br/>
+<label >Country</label>
+<select  name="country" id="passwd">
+<option value="India">India</option>
+<option value="USA">USA</option>
+<option value="China">China</option>
+<option value="Japan">Japan</option>
+<option value="Singapore">Singapore</option>
+<option value="Thailand">Thailand</option>
+<option value="Macau">Macau</option>
+</select><br/>
+Password:
+<input type="text" id="passwd" name="pd"><br/>
+Confirm Password:
+<input type="text" id="passwd" name="c pd"><br/>
+<input type="submit" value="Submit" align="center">
+<input type="reset" value="Reset" align="center">
+</form>
+</div>
+</div>
+</div>
+<script>
+function validate()
+{
+	var fname=document.regform.fname.value;
+	if(fname=" ")
+ 	{
+		alert("Please enter your first name");
+	}
+}
+</script>
+</body>
+</html>
